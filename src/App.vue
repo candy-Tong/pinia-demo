@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h2>graphData {{ graphData }}</h2>
+      <h2>edge {{ edge }}</h2>
     </div>
 </template>
 
@@ -8,15 +8,15 @@
 
 import { defineComponent, ref } from 'vue';
 import {useProjectStore} from "./stores/project";
-import {GraphData} from "@antv/g6";
+import {EdgeConfig} from "@antv/g6";
 
 
 export default defineComponent({
   setup() {
     const project = useProjectStore();
-    const graphData: GraphData = project.graphData;
+    const edge: EdgeConfig = project.edge;
     return {
-      graphData
+      edge
     };
   },
 });

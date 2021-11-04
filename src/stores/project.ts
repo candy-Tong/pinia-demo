@@ -3,9 +3,6 @@ import {shallowRef} from 'vue';
 import {EdgeConfig} from '@antv/g6';
 import {NodeConfig} from "@antv/g6-core/lib/types";
 
-
-
-
 const useProjectStore = defineStore('graph', {
     state() {
         return {
